@@ -1,0 +1,73 @@
+.feature-card{
+    display: inline-block;
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 20px 20px;
+}
+
+.feature-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    max-width: 800px;
+}
+
+.feature-card:hover{
+    border-color: #FFBF00;
+    box-shadow: 0 4px 8px rgba(255, 142, 4, 0.685);
+    /* box-shadow: 0 4px 8px rgba(255, 142, 4, 1); */
+    transition: border-color 0.3s ease;
+}
+
+.feature-card input[type="checkbox"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    /* appearance: none; */
+    border: 2px solid #ccc;
+    background-color:white;
+    border-radius: 4px;
+}
+
+h1{
+    text-align: center;
+}
+h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: 2px solid #FFBF00;
+  background-color:white;
+  border-radius: 4px;
+  
+}
+
+input[type="checkbox"]:checked{
+  border-color: #FFBF00;
+  background-color: #FFBF00;
+}
+
+
+input[type="checkbox"]:checked::after{
+  content: "✓";
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}
